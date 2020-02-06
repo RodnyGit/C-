@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P2Decorador\bin\Debug\P2Decorador.exe.config
+C:\Users\IDS\source\repos\Patrones\P2Decorador\bin\Debug\P2Decorador.exe
+C:\Users\IDS\source\repos\Patrones\P2Decorador\bin\Debug\P2Decorador.pdb
+C:\Users\IDS\source\repos\Patrones\P2Decorador\obj\Debug\P2Decorador.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\P2Decorador\obj\Debug\P2Decorador.exe
+C:\Users\IDS\source\repos\Patrones\P2Decorador\obj\Debug\P2Decorador.pdb

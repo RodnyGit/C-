@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P3Proxy\bin\Debug\P3Proxy.exe.config
+C:\Users\IDS\source\repos\Patrones\P3Proxy\bin\Debug\P3Proxy.exe
+C:\Users\IDS\source\repos\Patrones\P3Proxy\bin\Debug\P3Proxy.pdb
+C:\Users\IDS\source\repos\Patrones\P3Proxy\obj\Debug\P3Proxy.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\P3Proxy\obj\Debug\P3Proxy.exe
+C:\Users\IDS\source\repos\Patrones\P3Proxy\obj\Debug\P3Proxy.pdb
