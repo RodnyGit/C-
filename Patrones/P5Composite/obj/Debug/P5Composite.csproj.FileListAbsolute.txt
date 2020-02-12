@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P5Composite\bin\Debug\P5Composite.exe.config
+C:\Users\IDS\source\repos\Patrones\P5Composite\bin\Debug\P5Composite.exe
+C:\Users\IDS\source\repos\Patrones\P5Composite\bin\Debug\P5Composite.pdb
+C:\Users\IDS\source\repos\Patrones\P5Composite\obj\Debug\P5Composite.exe
+C:\Users\IDS\source\repos\Patrones\P5Composite\obj\Debug\P5Composite.pdb
+C:\Users\IDS\source\repos\Patrones\P5Composite\obj\Debug\P5Composite.csprojAssemblyReference.cache
