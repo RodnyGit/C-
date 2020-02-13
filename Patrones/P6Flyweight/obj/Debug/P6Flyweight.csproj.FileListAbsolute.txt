@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P6Flyweight\bin\Debug\P6Flyweight.exe.config
+C:\Users\IDS\source\repos\Patrones\P6Flyweight\bin\Debug\P6Flyweight.exe
+C:\Users\IDS\source\repos\Patrones\P6Flyweight\bin\Debug\P6Flyweight.pdb
+C:\Users\IDS\source\repos\Patrones\P6Flyweight\obj\Debug\P6Flyweight.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\P6Flyweight\obj\Debug\P6Flyweight.exe
+C:\Users\IDS\source\repos\Patrones\P6Flyweight\obj\Debug\P6Flyweight.pdb

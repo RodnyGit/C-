@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Bridge", "P4Bridge\P4Brid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P5Composite", "P5Composite\P5Composite.csproj", "{5BCA24B7-D121-46FE-B5C9-4D4CE0B78040}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P6Flyweight", "P6Flyweight\P6Flyweight.csproj", "{A0C1A07B-278A-49AB-9F25-635CF14B4683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5BCA24B7-D121-46FE-B5C9-4D4CE0B78040}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BCA24B7-D121-46FE-B5C9-4D4CE0B78040}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BCA24B7-D121-46FE-B5C9-4D4CE0B78040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C1A07B-278A-49AB-9F25-635CF14B4683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C1A07B-278A-49AB-9F25-635CF14B4683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C1A07B-278A-49AB-9F25-635CF14B4683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C1A07B-278A-49AB-9F25-635CF14B4683}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
