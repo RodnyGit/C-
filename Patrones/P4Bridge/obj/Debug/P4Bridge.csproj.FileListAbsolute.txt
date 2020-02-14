@@ -1,6 +1,0 @@
-C:\Users\IDS\source\repos\Patrones\P4Bridge\bin\Debug\P4Bridge.exe.config
-C:\Users\IDS\source\repos\Patrones\P4Bridge\bin\Debug\P4Bridge.exe
-C:\Users\IDS\source\repos\Patrones\P4Bridge\bin\Debug\P4Bridge.pdb
-C:\Users\IDS\source\repos\Patrones\P4Bridge\obj\Debug\P4Bridge.csprojAssemblyReference.cache
-C:\Users\IDS\source\repos\Patrones\P4Bridge\obj\Debug\P4Bridge.exe
-C:\Users\IDS\source\repos\Patrones\P4Bridge\obj\Debug\P4Bridge.pdb
