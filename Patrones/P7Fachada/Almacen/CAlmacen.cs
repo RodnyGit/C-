@@ -55,5 +55,18 @@ namespace SubSistemas
             return -1;
         }
 
+        public string ComprarProducto(CProducto producto, int cant, CCuenta cuenta, int clave)
+        {
+            if (ConsultarProducto(producto) >= cant)
+            {
+                if (cuenta.Extracto(clave, ((producto.Valor) * cant)))
+                {
+                    this.RetirarProducto(producto, cant);
+                    return "Correcto";
+                }
+            }
+            return "Incorrecto";
+        }
+
     }
 }

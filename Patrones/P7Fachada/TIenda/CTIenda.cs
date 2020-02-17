@@ -13,6 +13,9 @@ namespace SubSistemas
         const double iva = 0.22;
         private Dictionary<CProducto, int> inventario;
 
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Direccion { get => direccion; set => direccion = value; }
+
         public CTienda(string nombre, string direccion)
         {
             this.nombre = nombre;
@@ -63,10 +66,13 @@ namespace SubSistemas
 
         public string ComprarProducto(CProducto producto, int cant, CCuenta cuenta, int clave)
         {
-            if (cuenta.Extracto(clave, ((producto.Precio) * cant)))
+            if (ConsultarProducto(producto) >= cant)
             {
-                this.RetirarProducto(producto, cant);
-                return "Correcto";
+                if (cuenta.Extracto(clave, ((producto.Precio) * cant)))
+                {
+                    this.RetirarProducto(producto, cant);
+                    return "Correcto";
+                }
             }
             return "Incorrecto";
         }

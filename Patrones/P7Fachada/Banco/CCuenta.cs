@@ -9,12 +9,12 @@ namespace SubSistemas
     class CCuenta
     {
         private int id;
-        private CUsuario usuario;
         private double monto;
-        private string banco;
         private int ping = 123;
+        private CUsuario usuario;
+        private CBanco banco;
 
-        public CCuenta(int id, CUsuario usuario, string banco)
+        public CCuenta(int id, CUsuario usuario, CBanco banco)
         {
             this.id = id;
             this.usuario = usuario;
@@ -24,10 +24,12 @@ namespace SubSistemas
 
         public int Id { get => id; }
         public double Monto { get => monto; }
-        public string Banco { get => banco; }
+        public CBanco Banco { get => banco; }
+        public CUsuario Usuario { get => usuario; }
+
         public string CambiarPing(int pingViejo, int pingNuevo)
         {
-            if (pingViejo == this.ping)
+            if (this.ping == pingViejo)
             {
                 this.ping = pingNuevo;
                 return "se ha cambiado el ping de forma correcta";
