@@ -20,6 +20,7 @@ namespace SubSistemas
             this.usuario = usuario;
             this.monto = 0;
             this.banco = banco;
+            usuario.AddCuenta(id);
         }
 
         public int Id { get => id; }
@@ -57,6 +58,10 @@ namespace SubSistemas
         {
             monto += cantidad;
             return "se han extraido " + cantidad + " pesos de la cuenta " + id + " del usuario " + usuario.Nombre;
+        }
+        public override string ToString()
+        {
+            return "idCuenta "+id+" monto "+monto+" Banco "+banco.Nombre+" Usuario "+usuario.Nombre;
         }
     }
 }

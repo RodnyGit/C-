@@ -48,8 +48,9 @@
     <Compile Include="Producto\TIposProductos.cs" />
     <Compile Include="Banco\CBanco.cs" />
     <Compile Include="Banco\CCuenta.cs" />
+    <Compile Include="Reparto\CGestora.cs" />
     <Compile Include="TIenda\CTIenda.cs" />
-    <Compile Include="Reparto\CSistemaEnvio.cs" />
+    <Compile Include="Reparto\CEntidades.cs" />
     <Compile Include="Banco\CUsuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

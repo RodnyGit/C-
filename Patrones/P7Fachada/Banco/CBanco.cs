@@ -24,9 +24,20 @@ namespace SubSistemas
             cuentas.Add(newCuenta);
             return "Correcto";
         }
+        public bool ExisteCuenta(int numero)
+        {
+            foreach (CCuenta item in cuentas)
+                if (item.Id == numero)
+                    return true;
+            return false;
+        }
         public CCuenta ObtenerCuenta(int id)
         {
             return cuentas[id];
+        }
+        public override string ToString()
+        {
+            return "Banco "+nombre;
         }
 
 

@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P7Fachada\bin\Debug\P7Fachada.exe.config
+C:\Users\IDS\source\repos\Patrones\P7Fachada\bin\Debug\P7Fachada.exe
+C:\Users\IDS\source\repos\Patrones\P7Fachada\bin\Debug\P7Fachada.pdb
+C:\Users\IDS\source\repos\Patrones\P7Fachada\obj\Debug\P7Fachada.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\P7Fachada\obj\Debug\P7Fachada.exe
+C:\Users\IDS\source\repos\Patrones\P7Fachada\obj\Debug\P7Fachada.pdb

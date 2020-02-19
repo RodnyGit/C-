@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace SubSistemas
 {
-    class CSistemaEnvio
+    class CEntidades
     {
         private List<CTienda> listaTiendas;
         private List<CAlmacen> listaAlmacenes;
         private List<CBanco> listaBancos;
 
-        public CSistemaEnvio()
+        internal List<CTienda> ListaTiendas { get => listaTiendas; }
+        internal List<CAlmacen> ListaAlmacenes { get => listaAlmacenes; }
+        internal List<CBanco> ListaBancos { get => listaBancos; }
+
+        public CEntidades()
         {
             this.listaTiendas = new List<CTienda>();
             this.listaAlmacenes = new List<CAlmacen>();
@@ -38,11 +42,11 @@ namespace SubSistemas
             {
                 if (item == almacen)
                 {
-                    return "Ya existe el banco " + almacen.Nombre;
+                    return "Ya existe el almacen " + almacen.Nombre;
                 }
             }
             listaAlmacenes.Add(almacen);
-            return "Banco " + almacen.Nombre + " agregado...";
+            return "Almacen " + almacen.Nombre + " agregado...";
         }
 
         public string AddTienda(CTienda tienda)
@@ -51,13 +55,11 @@ namespace SubSistemas
             {
                 if (item == tienda)
                 {
-                    return "Ya existe el banco " + tienda.Nombre;
+                    return "Ya existe la tienda" + tienda.Nombre;
                 }
             }
             listaTiendas.Add(tienda);
-            return "Banco " + tienda.Nombre + " agregado...";
+            return "Tienda" + tienda.Nombre + " agregado...";
         }
-
-
     }
 }

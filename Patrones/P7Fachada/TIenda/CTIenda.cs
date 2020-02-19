@@ -22,6 +22,27 @@ namespace SubSistemas
             this.direccion = direccion;
             this.inventario = new Dictionary<CProducto, int>();
         }
+
+        public void AjustarPrecios()
+        {
+            foreach (CProducto item in inventario.Keys)
+            {
+                if (item.Precio == 0)
+                {
+                    item.Precio = item.Valor + item.Valor * iva;
+                }
+            }
+        }
+
+        public int ConsultarProducto(CProducto producto)
+        {
+            if (inventario.ContainsKey(producto))
+            {
+                return inventario[producto];
+            }
+            return -1;
+        }
+
         public string AddProducto(CProducto nuevo, int cantidad)
         {
             if (inventario.ContainsKey(nuevo))
@@ -29,9 +50,11 @@ namespace SubSistemas
                 inventario[nuevo] += cantidad;
                 return "Se han actualizado las cantidades del producto " + nuevo.Nombre;
             }
+            nuevo.Precio = nuevo.Valor + nuevo.Valor * iva;
             inventario.Add(nuevo, cantidad);
             return "Se ha agregado al inventario el producto " + nuevo.Nombre;
         }
+
         public string RetirarProducto(CProducto producto, int cantidad)
         {
             if (inventario.ContainsKey(producto))
@@ -45,26 +68,8 @@ namespace SubSistemas
             }
             return "No se encuentra ese producto en el almacen";
         }
-        public int ConsultarProducto(CProducto producto)
-        {
-            if (inventario.ContainsKey(producto))
-            {
-                return inventario[producto];
-            }
-            return -1;
-        }
-        public void AjustarPrecios()
-        {
-            foreach (CProducto item in inventario.Keys)
-            {
-                if (item.Precio == 0)
-                {
-                    item.Precio = item.Valor + item.Valor * iva;
-                }
-            }
-        }
 
-        public string ComprarProducto(CProducto producto, int cant, CCuenta cuenta, int clave)
+        public string VenderProducto(CProducto producto, int cant, CCuenta cuenta, int clave)
         {
             if (ConsultarProducto(producto) >= cant)
             {
@@ -75,6 +80,24 @@ namespace SubSistemas
                 }
             }
             return "Incorrecto";
+        }
+        public bool ComprarProducto(CAlmacen vendedora, CProducto producto, int cant, CCuenta cuenta, int ping)
+        {
+            if (vendedora.VenderProducto(producto, cant, cuenta, ping))
+            {
+                this.AddProducto(producto, cant);
+                return true;
+            }
+            return false;
+        }
+        public override string ToString()
+        {
+            string productos = "";
+            foreach (CProducto item in inventario.Keys)
+            {
+                productos += item.ToString() + ", disponibilidad " + inventario[item] + "\n";
+            }
+            return "Tienda " + nombre + " con dreccion " + direccion + "\n" + " productos: " + "\n" + productos;
         }
     }
 }

@@ -23,6 +23,15 @@ namespace SubSistemas
         public string Nombre { get => nombre; }
         public int Id { get => id; }
 
+        public int ConsultarProducto(CProducto producto)
+        {
+            if (inventario.ContainsKey(producto))
+            {
+                return inventario[producto];
+            }
+            return -1;
+        }
+
         public string AddProducto(CProducto nuevo, int cantidad)
         {
             if (inventario.ContainsKey(nuevo))
@@ -33,6 +42,7 @@ namespace SubSistemas
             inventario.Add(nuevo, cantidad);
             return "Se ha agregado al inventario el producto " + nuevo.Nombre;
         }
+
         public string RetirarProducto(CProducto producto, int cantidad)
         {
             if (inventario.ContainsKey(producto))
@@ -46,27 +56,29 @@ namespace SubSistemas
             }
             return "No se encuentra ese producto en el almacen";
         }
-        public int ConsultarProducto(CProducto producto)
-        {
-            if (inventario.ContainsKey(producto))
-            {
-                return inventario[producto];
-            }
-            return -1;
-        }
 
-        public string ComprarProducto(CProducto producto, int cant, CCuenta cuenta, int clave)
+        public bool VenderProducto(CProducto producto, int cant, CCuenta cuenta, int clave)
         {
             if (ConsultarProducto(producto) >= cant)
             {
                 if (cuenta.Extracto(clave, ((producto.Valor) * cant)))
                 {
                     this.RetirarProducto(producto, cant);
-                    return "Correcto";
+                    return true;
                 }
             }
-            return "Incorrecto";
+            return false;
         }
+        public override string ToString()
+        {
+            string productos = "";
+            foreach (CProducto item in inventario.Keys)
+            {
+                productos += item.ToString() + ", disponibilidad " + inventario[item] + "\n";
+            }
+            return "Almacen " + nombre + "\n" + " productos: " + "\n" + productos;
+        }
+
 
     }
 }

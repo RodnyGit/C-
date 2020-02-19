@@ -20,9 +20,13 @@ namespace SubSistemas
         }
         public string Nombre { get => nombre; }
         public int Id { get => id; }
-        public void AddCuenta(int numero)
+        public void AddCuenta(int cuenta)
         {
-            cuentas.Add(numero);
+            cuentas.Add(cuenta);
+        }
+        public override string ToString()
+        {
+            return "Usuario " + nombre + " con identificador " + id;
         }
     }
 }

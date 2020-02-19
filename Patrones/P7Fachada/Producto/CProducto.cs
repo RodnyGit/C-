@@ -19,7 +19,7 @@ namespace SubSistemas
             this.nombre = nombre;
             this.id = id;
             this.valor = valor;
-            this.precio = 0;            
+            this.precio = 0;
             this.tipo = tipo;
         }
 
@@ -28,5 +28,10 @@ namespace SubSistemas
         public double Valor { get => valor; }
         public double Precio { get => precio; set => precio = value; }
         internal tiposProductos Tipo { get => tipo; }
+
+        public override string ToString()
+        {
+            return "Producto " + nombre + " con valor " + valor + " y precio " + precio;
+        }
     }
 }
