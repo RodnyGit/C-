@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P9Prototipo\bin\Debug\P9Prototipo.exe.config
+C:\Users\IDS\source\repos\Patrones\P9Prototipo\bin\Debug\P9Prototipo.exe
+C:\Users\IDS\source\repos\Patrones\P9Prototipo\bin\Debug\P9Prototipo.pdb
+C:\Users\IDS\source\repos\Patrones\P9Prototipo\obj\Debug\P9Prototipo.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\P9Prototipo\obj\Debug\P9Prototipo.exe
+C:\Users\IDS\source\repos\Patrones\P9Prototipo\obj\Debug\P9Prototipo.pdb

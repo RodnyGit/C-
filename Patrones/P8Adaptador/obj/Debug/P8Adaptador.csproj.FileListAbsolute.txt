@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\P8Adaptador\bin\Debug\P8Adaptador.exe.config
+C:\Users\IDS\source\repos\Patrones\P8Adaptador\bin\Debug\P8Adaptador.exe
+C:\Users\IDS\source\repos\Patrones\P8Adaptador\bin\Debug\P8Adaptador.pdb
+C:\Users\IDS\source\repos\Patrones\P8Adaptador\obj\Debug\P8Adaptador.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\P8Adaptador\obj\Debug\P8Adaptador.exe
+C:\Users\IDS\source\repos\Patrones\P8Adaptador\obj\Debug\P8Adaptador.pdb
