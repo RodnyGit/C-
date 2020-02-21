@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Q12FabricaAbstracta
 {
-    interface Interface2
+    interface IProducto
     {
     }
 }

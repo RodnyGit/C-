@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Q12FabricaAbstracta
 {
-    class Class1
+    class CFabrica
     {
     }
 }
