@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Q10Fabrica\bin\Debug\Q10Fabrica.exe.config
+C:\Users\IDS\source\repos\Patrones\Q10Fabrica\bin\Debug\Q10Fabrica.exe
+C:\Users\IDS\source\repos\Patrones\Q10Fabrica\bin\Debug\Q10Fabrica.pdb
+C:\Users\IDS\source\repos\Patrones\Q10Fabrica\obj\Debug\Q10Fabrica.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Q10Fabrica\obj\Debug\Q10Fabrica.exe
+C:\Users\IDS\source\repos\Patrones\Q10Fabrica\obj\Debug\Q10Fabrica.pdb
