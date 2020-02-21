@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Q11Singleton\bin\Debug\Q11Singleton.exe.config
+C:\Users\IDS\source\repos\Patrones\Q11Singleton\bin\Debug\Q11Singleton.exe
+C:\Users\IDS\source\repos\Patrones\Q11Singleton\bin\Debug\Q11Singleton.pdb
+C:\Users\IDS\source\repos\Patrones\Q11Singleton\obj\Debug\Q11Singleton.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Q11Singleton\obj\Debug\Q11Singleton.exe
+C:\Users\IDS\source\repos\Patrones\Q11Singleton\obj\Debug\Q11Singleton.pdb
