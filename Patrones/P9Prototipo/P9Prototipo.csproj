@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CAdminProtos.cs" />
     <Compile Include="CCalcularPalabra.cs" />
     <Compile Include="CLetras.cs" />
     <Compile Include="CNumeros.cs" />

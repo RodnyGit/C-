@@ -27,7 +27,7 @@ namespace P9Prototipo
                 int number = 10;
                 while (number > 3)
                 {
-                    number = random.Next(9999999);
+                    number = random.Next(99999999);
                     if (number < 4)
                     {
                         int n = Convert.ToInt32(item) - 49;
@@ -48,7 +48,11 @@ namespace P9Prototipo
 
         public object Clonar()
         {
-            throw new NotImplementedException();
+            CCalcularPalabra clon = new CCalcularPalabra();
+            clon.createdWord = createdWord;
+            clon.numero = numero;
+            createdWord += '1';
+            return clon;
         }
     }
 }

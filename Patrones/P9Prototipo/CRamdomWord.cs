@@ -28,7 +28,7 @@ namespace P9Prototipo
                 Random random = new Random();
                 while (encontrada.Count() < palabra.Count())
                 {
-                    encontrada += vocales[random.Next(4)];
+                    encontrada += vocales[random.Next(5)];
                 }
                 vueltas++;
                 if (encontrada == palabra)
