@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q11Singleton", "Q11Singleto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q12FabricaAbstracta", "Q12FabricaAbstracta\Q12FabricaAbstracta.csproj", "{35C0CD00-7B67-4E85-94E5-03AC3B22DFDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q13Builder", "Q13Builder\Q13Builder.csproj", "{CF182933-BA85-4317-A54D-E90928550703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{35C0CD00-7B67-4E85-94E5-03AC3B22DFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35C0CD00-7B67-4E85-94E5-03AC3B22DFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35C0CD00-7B67-4E85-94E5-03AC3B22DFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF182933-BA85-4317-A54D-E90928550703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF182933-BA85-4317-A54D-E90928550703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF182933-BA85-4317-A54D-E90928550703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF182933-BA85-4317-A54D-E90928550703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

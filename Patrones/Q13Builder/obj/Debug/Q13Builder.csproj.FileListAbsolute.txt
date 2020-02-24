@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Q13Builder\bin\Debug\Q13Builder.exe.config
+C:\Users\IDS\source\repos\Patrones\Q13Builder\bin\Debug\Q13Builder.exe
+C:\Users\IDS\source\repos\Patrones\Q13Builder\bin\Debug\Q13Builder.pdb
+C:\Users\IDS\source\repos\Patrones\Q13Builder\obj\Debug\Q13Builder.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Q13Builder\obj\Debug\Q13Builder.exe
+C:\Users\IDS\source\repos\Patrones\Q13Builder\obj\Debug\Q13Builder.pdb
