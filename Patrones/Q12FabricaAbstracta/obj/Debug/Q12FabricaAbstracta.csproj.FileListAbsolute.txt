@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Q12FabricaAbstracta\bin\Debug\Q12FabricaAbstracta.exe.config
+C:\Users\IDS\source\repos\Patrones\Q12FabricaAbstracta\bin\Debug\Q12FabricaAbstracta.exe
+C:\Users\IDS\source\repos\Patrones\Q12FabricaAbstracta\bin\Debug\Q12FabricaAbstracta.pdb
+C:\Users\IDS\source\repos\Patrones\Q12FabricaAbstracta\obj\Debug\Q12FabricaAbstracta.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Q12FabricaAbstracta\obj\Debug\Q12FabricaAbstracta.exe
+C:\Users\IDS\source\repos\Patrones\Q12FabricaAbstracta\obj\Debug\Q12FabricaAbstracta.pdb

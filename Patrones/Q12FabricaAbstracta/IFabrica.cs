@@ -8,5 +8,8 @@ namespace Q12FabricaAbstracta
 {
     interface IFabrica
     {
+        void CrearProducto();
+        IProductoLeche ObtenProductoLeche { get; }
+        IProductoSaborizante ObtenSabor { get; }
     }
 }

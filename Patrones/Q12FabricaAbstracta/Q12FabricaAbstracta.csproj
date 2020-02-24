@@ -43,10 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CFabrica.cs" />
-    <Compile Include="CProducto.cs" />
+    <Compile Include="CFabricaNatural.cs" />
+    <Compile Include="CFabricaQuimica.cs" />
+    <Compile Include="CLecheAlmendras.cs" />
+    <Compile Include="CLecheCoco.cs" />
+    <Compile Include="CLecheVaca.cs" />
+    <Compile Include="CSaborChocolate.cs" />
+    <Compile Include="CVainillaNatural.cs" />
     <Compile Include="IFabrica.cs" />
-    <Compile Include="IProducto.cs" />
+    <Compile Include="IProductoLeche.cs" />
+    <Compile Include="IProductoSaborizante.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

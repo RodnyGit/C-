@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Q12FabricaAbstracta
 {
-    class CFabrica
+    interface IProductoLeche
     {
+        void Producir();
+        string ObtenerDatos();
     }
 }
