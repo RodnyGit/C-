@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Q14Templates\bin\Debug\Q14Templates.exe.config
+C:\Users\IDS\source\repos\Patrones\Q14Templates\bin\Debug\Q14Templates.exe
+C:\Users\IDS\source\repos\Patrones\Q14Templates\bin\Debug\Q14Templates.pdb
+C:\Users\IDS\source\repos\Patrones\Q14Templates\obj\Debug\Q14Templates.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Q14Templates\obj\Debug\Q14Templates.exe
+C:\Users\IDS\source\repos\Patrones\Q14Templates\obj\Debug\Q14Templates.pdb
