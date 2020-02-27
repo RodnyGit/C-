@@ -16,6 +16,7 @@ namespace P9Prototipo
             {
                 Console.WriteLine(item);
             }
+            Console.Write("Listo");
             Console.ReadKey();
         }
     }

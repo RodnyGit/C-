@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace P9Prototipo
@@ -9,15 +10,16 @@ namespace P9Prototipo
     class CAdminProtos
     {
         private IDictionary<string, IPrototipo> protoContainer = new Dictionary<string, IPrototipo>();
+        CCalcularPalabra calcularPalabra;
+        CRamdomWord randomWord;        
 
         public CAdminProtos()
         {
-            CCalcularPalabra calcularPalabra = new CCalcularPalabra(279819854);
-            CRamdomWord ramdomWord = new CRamdomWord("aeu");
-
+            calcularPalabra = new CCalcularPalabra(279819854);
+            randomWord = new CRamdomWord("aeua");
             protoContainer.Add("calcularPalabra", calcularPalabra);
-            protoContainer.Add("ramdomWord", ramdomWord);
-        }
+            protoContainer.Add("ramdomWord", randomWord);
+        }        
 
         public IDictionary<string, IPrototipo> ProtoContainer { get => protoContainer; }
 
