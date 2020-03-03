@@ -1,0 +1,9 @@
+C:\Users\IDS\source\repos\Emisor\subscriptor\bin\Debug\subscriptor.exe.config
+C:\Users\IDS\source\repos\Emisor\subscriptor\bin\Debug\subscriptor.exe
+C:\Users\IDS\source\repos\Emisor\subscriptor\bin\Debug\subscriptor.pdb
+C:\Users\IDS\source\repos\Emisor\subscriptor\bin\Debug\Division.dll
+C:\Users\IDS\source\repos\Emisor\subscriptor\bin\Debug\Division.pdb
+C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.csproj.CopyComplete
+C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.exe
+C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.pdb

@@ -1,0 +1,5 @@
+C:\Users\IDS\source\repos\Emisor\Division\bin\Debug\Division.dll
+C:\Users\IDS\source\repos\Emisor\Division\bin\Debug\Division.pdb
+C:\Users\IDS\source\repos\Emisor\Division\obj\Debug\Division.dll
+C:\Users\IDS\source\repos\Emisor\Division\obj\Debug\Division.pdb
+C:\Users\IDS\source\repos\Emisor\Division\obj\Debug\Division.csprojAssemblyReference.cache
