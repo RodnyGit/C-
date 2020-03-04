@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -21,6 +22,10 @@ namespace VisualTasking
     /// </summary>
     public partial class MainWindow : Window
     {
+        CancellationTokenSource CTS;
+        CancellationToken CT;
+        Task longRunningTask;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -29,17 +34,85 @@ namespace VisualTasking
         }
         void CreateTask()
         {
-            Task t = new Task(new Action(ShowMessage));
-            Task t2 = new Task(new Action(() => MessageBox.Show("Mensaje con arrow Function")));
-            Task t3 = new Task((message) => MessageBox.Show(message.ToString()), "valor de message");
-            Task t4 = new Task(new Action(() => AddMessage("Mensajito de tarea...")));
-            t4.Start();
-            AddMessage("Tarea del hilo principal...");
-            //Iniciar y ejecutar tareas en un solo paso            
-            Task t6 = Task.Factory.StartNew(() => AddMessage("Esta tarea es con Task.Factory.StartNew(()=>{})..."));
-            Task t8 = Task.Run(() => AddMessage("Esta tarea es con Task.Run(()=>{})..."));
+            #region Distintas maneras de crear tareas
+
+            //Task t = new Task(new Action(ShowMessage));
+            //Task t2 = new Task(new Action(() => MessageBox.Show("Mensaje con arrow Function")));
+            //Task t3 = new Task((message) => MessageBox.Show(message.ToString()), "valor de message");
+            //Task t4 = new Task(new Action(() => AddMessage("Mensajito de tarea...")));
+            //t4.Start();
+            //AddMessage("Tarea del hilo principal...");
+            ////Iniciar y ejecutar tareas en un solo paso            
+            //Task t6 = Task.Factory.StartNew(() => AddMessage("Esta tarea es con Task.Factory.StartNew(()=>{})..."));
+            //Task t8 = Task.Run(() => AddMessage("Esta tarea es con Task.Run(()=>{})..."));
+            #endregion
+
+            #region Esperando tareas
+
+            ////creando tarea
+            //Task t9 = new Task(new Action(() =>
+            //{
+            //    WriteToOuput("Iniciando tarea 9");
+            //    Thread.Sleep(5000);
+            //    WriteToOuput("Terminando tarea 9");
+            //}));
+            ////iniciando tarea
+            //t9.Start();
+            ////esperando tarea
+            //t9.Wait();
+
+
+            //RunTaskGroup();
+            #endregion
+
+            //TareaConRetorno();
 
         }
+        #region Task con retorno
+
+        void TareaConRetorno()
+        {
+            Task<int> T = Task.Run((new Func<int>(() =>
+            {
+                WriteToOuput("Creando el numero aleatorio ");
+                Thread.Sleep(3000);
+                return new Random().Next(1000);
+            })));
+            WriteToOuput("El valor aleatorio es " + Convert.ToString(T.Result));
+        }
+
+        #endregion
+
+
+        #region Metodos
+
+        void RunTaskGroup()
+        {
+            Task[] TaskGroup = new Task[]
+            {
+                Task.Run(()=>RunTask(1)),
+                Task.Run(()=>RunTask(2)),
+                Task.Run(()=>RunTask(3)),
+                Task.Run(()=>RunTask(4))
+            };
+            WriteToOuput("Esperando todas las tareas...");
+            Task.WaitAny(TaskGroup);
+            WriteToOuput("Finalizadas todas las tareas...");
+        }
+
+        void RunTask(byte numero)
+        {
+            WriteToOuput($"Iniciando tarea: {numero}");
+            Thread.Sleep(2000);
+            WriteToOuput($"Terminando tarea: {numero}");
+        }
+
+        void WriteToOuput(string mensaje)
+        {
+            Debug.WriteLine($"Mensaje: {mensaje}, " +
+                $"Hilo actual: { Thread.CurrentThread.ManagedThreadId}\n");
+        }
+
         void AddMessage(string mensaje)
         {
             int hiloTarea = Thread.CurrentThread.ManagedThreadId;
@@ -50,13 +123,28 @@ namespace VisualTasking
             });
         }
 
-
         void ShowMessage()
         {
             this.Dispatcher.Invoke(() =>
             {
                 Message.Content += "Ejecutando metodo showmessage \n";
             });
+        }
+        #endregion        
+
+        private void Stop_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Status_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

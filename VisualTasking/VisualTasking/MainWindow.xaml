@@ -8,5 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label x:Name="Message"></Label>
+        <Button x:Name="Start" Margin="10,342,642,47" Content="Start" Width="140" Height="30" FontSize="16" Click="Start_Click"/>
+        <Button x:Name="Stop" Content="Stop" Width="140" Height="30" FontSize="16" Margin="188,342,464,47" Click="Stop_Click"/>
+        <Button x:Name="Status" Content="Status" Width="140" Height="30" FontSize="16" Margin="357,342,295,47" Click="Status_Click" />
     </Grid>
 </Window>
