@@ -9,17 +9,32 @@ namespace P9Prototipo
 {
     class CAdminProtos
     {
+
         private IDictionary<string, IPrototipo> protoContainer = new Dictionary<string, IPrototipo>();
         CCalcularPalabra calcularPalabra;
-        CRamdomWord randomWord;        
+        CRamdomWord randomWord;
+        public event Action<object, ObjetoEventArgs> objetoNuevo;
+
 
         public CAdminProtos()
         {
-            calcularPalabra = new CCalcularPalabra(279819854);
-            randomWord = new CRamdomWord("aeua");
-            protoContainer.Add("calcularPalabra", calcularPalabra);
-            protoContainer.Add("ramdomWord", randomWord);
-        }        
+            Task tarea = Task.Run(() =>
+             {
+                 calcularPalabra = new CCalcularPalabra(279819854);
+                 if (objetoNuevo != null)
+                 {
+                     objetoNuevo(this, new ObjetoEventArgs(calcularPalabra));
+                 }
+                 randomWord = new CRamdomWord("aeua");
+                 if (objetoNuevo != null)
+                 {
+                     objetoNuevo(this, new ObjetoEventArgs(randomWord));
+                 }
+                 protoContainer.Add("calcularPalabra", calcularPalabra);
+                 protoContainer.Add("ramdomWord", randomWord);
+
+             });
+        }
 
         public IDictionary<string, IPrototipo> ProtoContainer { get => protoContainer; }
 
@@ -37,5 +52,16 @@ namespace P9Prototipo
             }
             return nombres;
         }
+    }
+    class ObjetoEventArgs : EventArgs
+    {
+        private object objeto;
+
+        public ObjetoEventArgs(object objeto)
+        {
+            this.objeto = objeto;
+        }
+
+        public object Objeto { get => objeto; set => objeto = value; }
     }
 }

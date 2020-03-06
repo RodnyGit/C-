@@ -9,8 +9,8 @@ namespace Division
     public class CDivision
     {
         #region Equivalencia
-        //public delegate void miEvento(object sender, ZeroDivisionEventArgs e);
-        //public event miEvento ZeroDivisionEventHandler2;
+        // public delegate void miEvento(object sender, ZeroDivisionEventArgs e);
+        // public event miEvento ZeroDivisionEventHandler2;
 
         public event Action<object, ZeroDivisionEventArgs> ZeroDivisionEventHandler;
         #endregion
