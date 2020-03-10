@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Q15Estado
 {
-    class CCaldera
+    class CCaldera : IEstado
     {
         private IEstado estado;
         private IEstado alarma;
@@ -17,19 +17,15 @@ namespace Q15Estado
 
 
 
-        public CCaldera(int temperatura, int combustible, IEstado estado)
+        public CCaldera()
         {
-            this.temperatura = temperatura;
-            this.combustible = combustible;
-            this.estado = estado;
-            this.alarma = estado;
-            this.reposo = estado;
-            this.calentando = estado;
-        }
+            this.temperatura = 20;
+            this.combustible = 60;
+            this.alarma = new CEstadoAlarma(this);
+            this.reposo = new CReposo(this);
+            this.calentando = new CEstadoCalentando(this);
 
-        public void ColocarEstado(IEstado estado)
-        {
-            this.estado = estado;
+            this.estado = calentando;
         }
 
         public int Temperatura { get => temperatura; set => temperatura = value; }
@@ -38,5 +34,38 @@ namespace Q15Estado
         internal IEstado Alarma { get => alarma; }
         internal IEstado Reposo { get => reposo; }
         internal IEstado Calentando { get => calentando; }
+
+
+        public void ColocarEstado(IEstado estado)
+        {
+            this.estado = estado;
+        }
+
+        public void Trabajar()
+        {
+            estado.Trabajar();
+        }
+
+        public void CortarFuego()
+        {
+            estado.CortarFuego();
+        
+        }
+
+        public void PonerCombustible()
+        {
+            estado.PonerCombustible();
+        }
+
+        public void ForzarFuego()
+        {
+            estado.ForzarFuego();
+        }
+
+        public override string ToString()
+        {
+            return estado.ToString();
+        }
+
     }
 }

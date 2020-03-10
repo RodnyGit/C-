@@ -27,20 +27,18 @@ namespace Q15Estado
 
         public void ForzarFuego()
         {
-            Console.WriteLine("Prendiendo Fuego");
-            miCaldera.ColocarEstado(miCaldera.Calentando);
+            Console.WriteLine("Ya la caldera esta prendida...");            
         }
 
         public void PonerCombustible()
         {
-            Console.WriteLine("No se puede poner combustible con la carder prendida");
+            Console.WriteLine("No se puede poner combustible con la caldera prendida");
         }
 
         public void Trabajar()
         {
             if (miCaldera.Combustible>0)
-            {
-                Console.WriteLine("Estamos calentando");
+            {                
                 miCaldera.Combustible -= 3;
                 miCaldera.Temperatura += 10;
 
@@ -52,12 +50,16 @@ namespace Q15Estado
                 {
                     miCaldera.ColocarEstado(miCaldera.Reposo);
                 }
-                if (miCaldera.Combustible<=1)
+                if (miCaldera.Combustible<=3)
                 {
                     miCaldera.ColocarEstado(miCaldera.Reposo);
                 }
 
             }
+        }
+        public override string ToString()
+        {
+            return $"Calentando... Temp: {miCaldera.Temperatura}, Comb: {miCaldera.Combustible}";
         }
     }
 }

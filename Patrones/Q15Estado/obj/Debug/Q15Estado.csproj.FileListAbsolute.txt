@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Q15Estado\bin\Debug\Q15Estado.exe.config
+C:\Users\IDS\source\repos\Patrones\Q15Estado\bin\Debug\Q15Estado.exe
+C:\Users\IDS\source\repos\Patrones\Q15Estado\bin\Debug\Q15Estado.pdb
+C:\Users\IDS\source\repos\Patrones\Q15Estado\obj\Debug\Q15Estado.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Q15Estado\obj\Debug\Q15Estado.exe
+C:\Users\IDS\source\repos\Patrones\Q15Estado\obj\Debug\Q15Estado.pdb

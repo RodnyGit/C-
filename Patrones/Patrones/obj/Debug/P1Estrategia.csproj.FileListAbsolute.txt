@@ -1,0 +1,6 @@
+C:\Users\IDS\source\repos\Patrones\Patrones\bin\Debug\Patrones.exe.config
+C:\Users\IDS\source\repos\Patrones\Patrones\bin\Debug\Patrones.exe
+C:\Users\IDS\source\repos\Patrones\Patrones\bin\Debug\Patrones.pdb
+C:\Users\IDS\source\repos\Patrones\Patrones\obj\Debug\P1Estrategia.csprojAssemblyReference.cache
+C:\Users\IDS\source\repos\Patrones\Patrones\obj\Debug\Patrones.exe
+C:\Users\IDS\source\repos\Patrones\Patrones\obj\Debug\Patrones.pdb
