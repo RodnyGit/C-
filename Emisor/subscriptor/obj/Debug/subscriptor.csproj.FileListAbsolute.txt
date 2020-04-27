@@ -7,3 +7,12 @@ C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.csprojAssembl
 C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.csproj.CopyComplete
 C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.exe
 C:\Users\IDS\source\repos\Emisor\subscriptor\obj\Debug\subscriptor.pdb
+E:\repos\C-\Emisor\subscriptor\bin\Debug\subscriptor.exe.config
+E:\repos\C-\Emisor\subscriptor\bin\Debug\subscriptor.exe
+E:\repos\C-\Emisor\subscriptor\bin\Debug\subscriptor.pdb
+E:\repos\C-\Emisor\subscriptor\bin\Debug\Division.dll
+E:\repos\C-\Emisor\subscriptor\bin\Debug\Division.pdb
+E:\repos\C-\Emisor\subscriptor\obj\Debug\subscriptor.csprojAssemblyReference.cache
+E:\repos\C-\Emisor\subscriptor\obj\Debug\subscriptor.csproj.CopyComplete
+E:\repos\C-\Emisor\subscriptor\obj\Debug\subscriptor.exe
+E:\repos\C-\Emisor\subscriptor\obj\Debug\subscriptor.pdb

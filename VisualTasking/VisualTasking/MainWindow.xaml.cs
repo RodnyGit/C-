@@ -30,44 +30,43 @@ namespace VisualTasking
         {
             InitializeComponent();
             //CreateTask();
+        }
+        void CreateTask()
+        {
+            #region Distintas maneras de crear tareas
+
+            Task t = new Task(new Action(ShowMessage));
+            Task t2 = new Task(new Action(() => MessageBox.Show("Mensaje con arrow Function")));
+            Task t3 = new Task((message) => MessageBox.Show(message.ToString()), "valor de message");
+            Task t4 = new Task(new Action(() => AddMessage("Mensajito de tarea...")));
+            t4.Start();
+            AddMessage("Tarea del hilo principal...");
+            //Iniciar y ejecutar tareas en un solo paso
+            Task t6 = Task.Factory.StartNew(() => AddMessage("Esta tarea es con Task.Factory.StartNew(()=>{})..."));
+            Task t8 = Task.Run(() => AddMessage("Esta tarea es con Task.Run(()=>{})..."));
+            #endregion
+
+            #region Esperando tareas
+
+            //creando tarea
+            Task t9 = new Task(new Action(() =>
+            {
+                WriteToOuput("Iniciando tarea 9");
+                Thread.Sleep(5000);
+                WriteToOuput("Terminando tarea 9");
+            }));
+            //iniciando tarea
+            t9.Start();
+            //esperando tarea
+            t9.Wait();
+
+
+            RunTaskGroup();
+            #endregion
+
+            TareaConRetorno();
 
         }
-        //void CreateTask()
-        //{
-        //    #region Distintas maneras de crear tareas
-
-        //    Task t = new Task(new Action(ShowMessage));
-        //    Task t2 = new Task(new Action(() => MessageBox.Show("Mensaje con arrow Function")));
-        //    Task t3 = new Task((message) => MessageBox.Show(message.ToString()), "valor de message");
-        //    Task t4 = new Task(new Action(() => AddMessage("Mensajito de tarea...")));
-        //    t4.Start();
-        //    AddMessage("Tarea del hilo principal...");
-        //    //Iniciar y ejecutar tareas en un solo paso            
-        //    Task t6 = Task.Factory.StartNew(() => AddMessage("Esta tarea es con Task.Factory.StartNew(()=>{})..."));
-        //    Task t8 = Task.Run(() => AddMessage("Esta tarea es con Task.Run(()=>{})..."));
-        //    #endregion
-
-        //    #region Esperando tareas
-
-        //    ////creando tarea
-        //    //Task t9 = new Task(new Action(() =>
-        //    //{
-        //    //    WriteToOuput("Iniciando tarea 9");
-        //    //    Thread.Sleep(5000);
-        //    //    WriteToOuput("Terminando tarea 9");
-        //    //}));
-        //    ////iniciando tarea
-        //    //t9.Start();
-        //    ////esperando tarea
-        //    //t9.Wait();
-
-
-        //    //RunTaskGroup();
-        //    #endregion
-
-        //    //TareaConRetorno();
-
-        //}
         #region Task con retorno
 
         void TareaConRetorno()
@@ -82,7 +81,6 @@ namespace VisualTasking
         }
 
         #endregion
-
 
         #region Metodos
 
@@ -130,7 +128,9 @@ namespace VisualTasking
                 Message.Content += "Ejecutando metodo showmessage \n";
             });
         }
-        #endregion        
+        #endregion
+
+        #region MetodosVisual
 
         private void Stop_Click(object sender, RoutedEventArgs e)
         {
@@ -193,5 +193,6 @@ namespace VisualTasking
                 CT.ThrowIfCancellationRequested();
             }
         }
+        #endregion
     }
 }

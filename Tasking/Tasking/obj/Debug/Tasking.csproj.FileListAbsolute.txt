@@ -7,3 +7,12 @@ C:\Users\IDS\source\repos\Tasking\Tasking\obj\Debug\Tasking.csproj.GenerateResou
 C:\Users\IDS\source\repos\Tasking\Tasking\obj\Debug\Tasking.exe
 C:\Users\IDS\source\repos\Tasking\Tasking\obj\Debug\Tasking.pdb
 C:\Users\IDS\source\repos\Tasking\Tasking\obj\Debug\Tasking.csprojAssemblyReference.cache
+E:\repos\C-\Tasking\Tasking\bin\Debug\Tasking.exe.config
+E:\repos\C-\Tasking\Tasking\bin\Debug\Tasking.exe
+E:\repos\C-\Tasking\Tasking\bin\Debug\Tasking.pdb
+E:\repos\C-\Tasking\Tasking\obj\Debug\Tasking.csprojAssemblyReference.cache
+E:\repos\C-\Tasking\Tasking\obj\Debug\Tasking.Form1.resources
+E:\repos\C-\Tasking\Tasking\obj\Debug\Tasking.Properties.Resources.resources
+E:\repos\C-\Tasking\Tasking\obj\Debug\Tasking.csproj.GenerateResource.cache
+E:\repos\C-\Tasking\Tasking\obj\Debug\Tasking.exe
+E:\repos\C-\Tasking\Tasking\obj\Debug\Tasking.pdb

@@ -12,3 +12,17 @@ C:\Users\IDS\source\repos\VisualTasking\VisualTasking\obj\Debug\VisualTasking.Pr
 C:\Users\IDS\source\repos\VisualTasking\VisualTasking\obj\Debug\VisualTasking.csproj.GenerateResource.cache
 C:\Users\IDS\source\repos\VisualTasking\VisualTasking\obj\Debug\VisualTasking.exe
 C:\Users\IDS\source\repos\VisualTasking\VisualTasking\obj\Debug\VisualTasking.pdb
+E:\repos\C-\VisualTasking\VisualTasking\bin\Debug\VisualTasking.exe.config
+E:\repos\C-\VisualTasking\VisualTasking\bin\Debug\VisualTasking.exe
+E:\repos\C-\VisualTasking\VisualTasking\bin\Debug\VisualTasking.pdb
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking.csprojAssemblyReference.cache
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\MainWindow.g.cs
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\App.g.cs
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking_MarkupCompile.cache
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking_MarkupCompile.lref
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\MainWindow.baml
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking.g.resources
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking.Properties.Resources.resources
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking.csproj.GenerateResource.cache
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking.exe
+E:\repos\C-\VisualTasking\VisualTasking\obj\Debug\VisualTasking.pdb
